@@ -48,14 +48,13 @@ src/main/webapp/
     ├── index1.html
     └── WEB-INF/web.xml
 
+
 🛢 Database Setup (MySQL)
 
 Run the following SQL:
 
 CREATE DATABASE userdb;
-
 USE userdb;
-
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
     fullname VARCHAR(100),
