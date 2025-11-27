@@ -1,20 +1,21 @@
-🚀 Servlet Registration App
+🚀 User Authentication System using Servlets & JDBC
 
-A Java Web Application built using Servlets, JDBC, and MySQL, developed in Eclipse IDE and deployed on Apache Tomcat 9.
-This project demonstrates User Registration, Login, and GET/POST Servlets — perfect for learning backend fundamentals.
+A professional Java Web Application built using Servlets, JDBC, and MySQL, implemented in Eclipse and deployed on Apache Tomcat.
+This project handles secure User Registration, Login, Session Management, and demonstrates real-world backend development concepts.
 
-🏷️ Badges
+🏷️ Technologies Used
 
+Java (Servlet API)
 
+JDBC (MySQL Connector)
 
+HTML5
 
+Apache Tomcat 9
 
+Eclipse IDE
 
-
-
-
-
-
+MySQL
 
 🌟 Features
 
@@ -22,43 +23,34 @@ This project demonstrates User Registration, Login, and GET/POST Servlets — pe
 
 🔑 User Login
 
-➕ Addition (GET/POST Servlet Example)
+🧑‍💻 Session Management
 
-🗄 MySQL Database Integration
+➕ Addition Servlet (GET/POST Demo)
 
-📡 Runs on Apache Tomcat
+🗄️ Database Integration using JDBC
 
-📁 Clean MVC-style Project Structure
+📡 Deployed using Apache Tomcat
 
-🔰 Great for students & beginners
+🧱 Clean Project Structure
 
 📂 Project Structure
 src/main/java/com/project/
-    ├── AdditionServlet.java
-    ├── LoginServlet.java
     ├── RegisterServlet.java
+    ├── LoginServlet.java
+    ├── AdditionServlet.java
     ├── Projects.java
     └── DBConnection.java
 
 src/main/webapp/
     ├── index.html
-    ├── index1.html
     ├── login.html
     ├── register.html
+    ├── index1.html
     └── WEB-INF/web.xml
 
-⚙️ Technologies Used
-Technology	Purpose
-Java	Core language
-Servlet API	Backend logic
-JDBC	Database connectivity
-MySQL	Persistent storage
-HTML5	Forms & UI
-Apache Tomcat 9	Server
-Eclipse IDE	Development
-🛢️ Database Setup (MySQL)
+🛢 Database Setup (MySQL)
 
-Run this SQL:
+Run the following SQL:
 
 CREATE DATABASE userdb;
 
@@ -72,70 +64,57 @@ CREATE TABLE users (
     password VARCHAR(50)
 );
 
-🔌 DB Connection Details
+🔌 Database Connection (DBConnection.java)
 
-Make sure your DBConnection.java looks like this:
+Your DB configuration:
 
 jdbc:mysql://localhost:3306/userdb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
 user = root
-password = sql   // change if needed
+password = sql123   // replace with your MySQL password
 
 
-Also confirm the JDBC driver is placed in:
+Place MySQL Connector JAR inside:
 
 src/main/webapp/WEB-INF/lib/
-mysql-connector-j.jar
 
-▶️ Running the Application
+▶️ How to Run the Project
 
-Import the project into Eclipse
+Import project into Eclipse
 
 Add Apache Tomcat 9 to Servers tab
 
-Add MySQL JDBC JAR to
-WEB-INF/lib/
+Add MySQL JDBC connector to WEB-INF/lib
 
-Right-click project →
-Run As → Run on Server
+Right-click project → Run on Server
 
-Open the app in browser:
+Open in browser:
 
 http://localhost:8080/SERVLETPROJECT1/
 
 💻 Clone This Repository
-
-Use this command:
-
 git clone https://github.com/UmeshDc13/servlet-registration-app.git
 
-📦 How to Build & Deploy
+📈 Future Enhancements
 
-Clone repo
+Password encryption (SHA-256 / BCrypt)
 
-Import into Eclipse (File → Import → Existing Maven/Java Project)
+Email verification
 
-Configure Tomcat server
+Admin dashboard
 
-Run the project
+CRUD operations (Edit/Delete users)
 
-Access the pages:
-
-Registration → /register.html
-
-Login → /login.html
-
-Addition → /index1.html
+JSP-based MVC architecture
 
 👨‍💻 Author
 
 Umesh DC
-Java Developer | Servlet & Spring Learner
+Java Developer | Web App Learner
 
 🔗 GitHub: https://github.com/UmeshDc13
 
-⭐ Support This Project
+⭐ Support
 
-If you found this useful:
-
-👉 Star the repository ⭐
-👉 Follow for more projects
+If you like this project:
+👉 Star this repository ⭐
+It motivates me to build more projects!
